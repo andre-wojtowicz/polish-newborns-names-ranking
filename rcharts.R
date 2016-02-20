@@ -53,7 +53,8 @@ html = paste(unlist(html), collapse ="\r\n")
 
 # sub
 
-html.new = gsub("<style>.*</style>", css, html)
+html.new = gsub("http:", "https:", html)
+html.new = gsub("<style>.*</style>", css, html.new)
 html.new = gsub("<head>", paste0("<head>\r\n<title>",TITLE,"</title>") , html.new)
 html.new = gsub("<body ng-app>", paste0("<body ng-app>\r\n<h3 style=\"text-align: center;\">",TITLE,"</h3>") , html.new)
 html.new = gsub("</body>", "<h5 style=\"text-align: center;\">Source: msw.gov.pl</h5></body>", html.new)
