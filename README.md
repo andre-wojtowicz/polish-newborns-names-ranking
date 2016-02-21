@@ -2,7 +2,7 @@
 
 This project visualizes most popular names among Polish newborns' across recent years. The statistics are delivered by [Polish Ministry of Interior and Administration](https://msw.gov.pl).
 
-The visualization is made with use of [rCharts](http://rcharts.io) and and [NVD3](http://nvd3.org).
+The visualization is made with use of [rCharts](http://rcharts.io) and [NVD3](http://nvd3.org).
 
 ## Results
 
